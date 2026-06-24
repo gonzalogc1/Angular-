@@ -1,0 +1,68 @@
+<div class="home-container">
+  <!-- Hero Section -->
+  <div class="hero-section text-center text-white py-5 mb-5 shadow-sm">
+    <div class="container py-4">
+      <img src="escudoESCOM.jpg" alt="ESCOM Logo" class="hero-logo mb-4 shadow" onerror="this.style.display='none'">
+      <h1 class="display-4 fw-bold mb-3 tracking-in-expand">Portal de Tecnologías Web</h1>
+      <p class="lead mb-4 font-sub">Bienvenido a la plataforma interactiva del proyecto final de Angular.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a routerLink="/listaDeCategorias" class="btn btn-light btn-lg px-4 shadow-sm hover-scale">
+          <i class="bi bi-grid-fill me-2"></i>Gestionar Categorías
+        </a>
+        <a routerLink="/calculadora" class="btn btn-outline-light btn-lg px-4 hover-scale">
+          <i class="bi bi-calculator me-2"></i>Calculadora
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards Grid Section -->
+  <div class="container pb-5">
+    <h2 class="text-center mb-5 section-title">¿Qué deseas hacer hoy?</h2>
+    <div class="row g-4">
+      
+      <!-- Card 1: Ver Categorías -->
+      <div class="col-md-4">
+        <div class="card h-100 feature-card border-0 shadow-sm">
+          <div class="card-body text-center p-4 d-flex flex-column">
+            <div class="icon-wrapper bg-primary-subtle text-primary mb-4 mx-auto rounded-circle">
+              <span class="fs-2">🗂️</span>
+            </div>
+            <h3 class="card-title h5 mb-3">Lista de Categorías</h3>
+            <p class="card-text text-muted flex-grow-1">Visualiza, edita y elimina las categorías de productos disponibles en el sistema.</p>
+            <a routerLink="/listaDeCategorias" class="btn btn-primary mt-3 w-100 hover-slide">Ir a Categorías</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Nueva Categoría -->
+      <div class="col-md-4">
+        <div class="card h-100 feature-card border-0 shadow-sm">
+          <div class="card-body text-center p-4 d-flex flex-column">
+            <div class="icon-wrapper bg-success-subtle text-success mb-4 mx-auto rounded-circle">
+              <span class="fs-2">➕</span>
+            </div>
+            <h3 class="card-title h5 mb-3">Nueva Categoría</h3>
+            <p class="card-text text-muted flex-grow-1">Registra una nueva categoría de productos completando el formulario dinámico.</p>
+            <a routerLink="/categoriaForm" class="btn btn-success mt-3 w-100 hover-slide">Agregar Nueva</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Calculadora -->
+      <div class="col-md-4">
+        <div class="card h-100 feature-card border-0 shadow-sm">
+          <div class="card-body text-center p-4 d-flex flex-column">
+            <div class="icon-wrapper bg-info-subtle text-info mb-4 mx-auto rounded-circle">
+              <span class="fs-2">🧮</span>
+            </div>
+            <h3 class="card-title h5 mb-3">Calculadora Interactiva</h3>
+            <p class="card-text text-muted flex-grow-1">Realiza operaciones aritméticas básicas de forma interactiva y veloz.</p>
+            <a routerLink="/calculadora" class="btn btn-info text-white mt-3 w-100 hover-slide">Abrir Calculadora</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
